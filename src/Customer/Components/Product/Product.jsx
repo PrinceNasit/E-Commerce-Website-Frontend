@@ -112,7 +112,7 @@ export default function Product() {
             stock:stock || 'in_stock'
         }
 
-        // Nasit 1234
+       
         // console.log(data);
         dispatch(findProducts(data));
 
