@@ -14,6 +14,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import AuthMode from "../../Auth/AuthMode";
 import { useDispatch, useSelector } from "react-redux";
 import {getUser, logout} from '../../../State/Auth/Action'
+import { orderHistory } from "../../../State/Order/Action";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -26,7 +27,8 @@ export default function Navigation() {
   const [anchorEl, setAnchorEl] = useState(null);
   const openUserMenu = Boolean(anchorEl);
   const jwt = localStorage.getItem("jwt");
-  const {auth}=useSelector(store=>store)
+  const {auth}=useSelector(store=>store);
+  const {cart}=useSelector(store=>store);
   const dispatch=useDispatch();
   const location=useLocation();
 
@@ -36,7 +38,10 @@ export default function Navigation() {
   const handleCloseUserMenu = (event) => {
     setAnchorEl(null);
   };
-
+  const getOrders=()=>{
+    dispatch(orderHistory(auth.user));
+    navigate("/account/order");
+  }
   const handleOpen = () => {
     setOpenAuthModal(true);
   };
@@ -214,7 +219,7 @@ export default function Navigation() {
                       href="/"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
-                      Sign in
+                      Sign IN
                     </a>
                   </div>
                 </div>
@@ -256,14 +261,20 @@ export default function Navigation() {
               </button>
 
               {/* Logo */}
-              <div className="ml-4 flex lg:ml-0">
+              <div onClick={()=>navigate("/")} className="ml-4 flex lg:ml-0">
              
                   <span className="sr-only">Your Company</span>
-                  <img
-                    src="https://res.cloudinary.com/ddkso1wxi/image/upload/v1675919455/Logo/Copy_of_Zosh_Academy_nblljp.png"
-                    alt="Shopwithzosh"
+                  <span className="font-bold text-green-800 logo-title">Shopier</span>
+                  {/* <img
+                    src="src\Customer\Components\Nevigation\logo.png"
+                    width={15}
+                    height={15}
+                    alt=""
                     className="h-8 w-8 mr-2"
-                  />
+                    onClick={()=>{
+                      navigate("/");
+                    }}
+                  /> */}
 
               </div>
 
@@ -437,7 +448,7 @@ export default function Navigation() {
                           "aria-labelledby": "basic-button",
                         }}
                       >
-                        <MenuItem onClick={()=> navigate("/account/order")}>
+                        <MenuItem onClick={getOrders}>
                           {/* {auth.user?.role === "ROLE_ADMIN"
                             ? "Admin Dashboard"
                             : "My Orders"} */}
@@ -480,7 +491,7 @@ export default function Navigation() {
                       aria-hidden="true"
                     />
                     <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                     2
+                     {cart.cartItems?.length}
                     </span>
                     <span className="sr-only">items in cart, view bag</span>
                   </Button>

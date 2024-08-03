@@ -1,12 +1,40 @@
-export const mens_kurta=[
+export const women_top=[
     {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/l5h2xe80/kurta/x/6/n/xl-kast-tile-green-majestic-man-original-imagg4z33hu4kzpv.jpeg?q=70",
-        "brand": "Majestic Man",
-        "title": "Men Printed Pure Cotton Straight Kurta",
-        "color": "Green",
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/top/8/t/m/xxl-amrcrochetlacetop-madstitches-apparels-private-limited-original-imagr39r3kfmb5vy.jpeg?q=70",
+        "brand": "Madstitches Apparels Private Limited",
+        "title": "Party Regular Sleeves Floral Print, Printed Women White...",
+        "color": "white",
+        "discountedPrice": 449,
+        "price": 2500,
+        "discountPersent": 80,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "top",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kflftzk0/top/q/t/m/l-aw-2081w-aelomart-original-imafwyzhw8t2npsk.jpeg?q=70",
+        "brand": "Aelomart",
+        "title": "Casual Regular Sleeves Solid Women White Top",
+        "color": "white",
         "discountedPrice": 499,
-        "price": 1499,
-        "discountPersent": 66,
+        "price": 1599,
+        "discountPersent": 60,
         "size": [
             {
               "name": "S",
@@ -22,103 +50,19 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Men",
+          "topLavelCategory": "Women",
           "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "mens_kurta",
+          "thirdLavelCategory": "top",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/l/f/r/xl-k-spl668-yellow-sg-leman-original-imagznqcrahgq9rf.jpeg?q=70",
-        "brand": "SG LEMAN",
-        "title": "Men Embroidered Jacquard Straight Kurta",
-        "color": "Yellow",
-        "discountedPrice": 799,
-        "price": 2499,
-        "discountPersent": 68,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "topLavelCategory": "Men",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/g/6/k/m-sksh-dt1105-pcbl-fubar-original-imafux247zhqym2z-bb.jpeg?q=70",
-        "brand": "FUBAR",
-        "title": "Men Printed Cotton Blend Straight Kurta",
-        "color": "Blue",
-        "discountedPrice": 399,
-        "price": 1499,
-        "discountPersent": 73,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "topLavelCategory": "Men",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/i/v/x/xxl-br-ad-kt-105-adwyn-peter-original-imagj4zyd2q7t6cg.jpeg?q=70",
-        "brand": "ALY JOHN",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "White",
-        "discountedPrice": 474,
-        "price": 1999,
-        "discountPersent": 76,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "topLavelCategory": "Men",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/j/a/r/l-poch521835-peter-england-original-imag7jg47g7cxhg3-bb.jpeg?q=70",
-        "brand": "PETER ENGLAND",
-        "title": "Men Woven Design Pure Cotton Straight Kurta",
-        "color": "Grey",
-        "discountedPrice": 524,
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/ke1pnrk0/top/p/p/z/xl-tttp003846-tokyo-talkies-original-imafutjsuhhacuev.jpeg?q=70",
+        "brand": "Tokyo Talkies",
+        "title": "Casual Regular Sleeves Solid Women White Top",
+        "color": "white",
+        "discountedPrice": 419,
         "price": 1049,
-        "discountPersent": 50,
+        "discountPersent": 60,
         "size": [
             {
               "name": "S",
@@ -134,9 +78,65 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Men",
+          "topLavelCategory": "Women",
           "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "mens_kurta",
+          "thirdLavelCategory": "top",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/1/d/2/s-3813-the-dry-state-original-imagcfh833gdjeem-bb.jpeg?q=70",
+        "brand": "THE DRY STATE",
+        "title": "Women Printed Round Neck Pure Cotton White T-Shirt",
+        "color": "white",
+        "discountedPrice": 399,
+        "price": 1399,
+        "discountPersent": 70,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "top",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/ky1vl3k0/t-shirt/f/u/6/m-2co-w-regular-must-blk-young-trendz-original-imagadhfgte57e67.jpeg?q=70",
+        "brand": "Young trendz",
+        "title": "Pack of 2 Women Solid Round Neck Pure Cotton White, Bla...",
+        "color": "white",
+        "discountedPrice": 354,
+        "price": 2069,
+        "discountPersent": 80,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "top",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
 ]

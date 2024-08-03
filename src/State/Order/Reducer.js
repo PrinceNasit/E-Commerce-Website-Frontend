@@ -1,4 +1,4 @@
-import { CREATE_ORDER_FAILURE, CREATE_ORDER_REQUEST, CREATE_ORDER_SUCCESS, GET_ORDER_BY_ID_FAILURE, GET_ORDER_BY_ID_REQUEST, GET_ORDER_BY_ID_SUCCESS } from "./ActionType"
+import { CONFIRM_ORDER_FAILURE, CONFIRM_ORDER_REQUEST, CONFIRM_ORDER_SUCCESS, CREATE_ORDER_FAILURE, CREATE_ORDER_REQUEST, CREATE_ORDER_SUCCESS, GET_ORDER_BY_ID_FAILURE, GET_ORDER_BY_ID_REQUEST, GET_ORDER_BY_ID_SUCCESS, GET_ORDER_HISTORY_FAILURE, GET_ORDER_HISTORY_SUCCESS } from "./ActionType"
 
 const iniState={
     orders:[],
@@ -10,8 +10,17 @@ const iniState={
 export const orderReducer=(state=iniState,action)=>{
     switch(action.type){
         case CREATE_ORDER_REQUEST:
+        case CONFIRM_ORDER_REQUEST:
             return {...state,loading:true,error:null}
         case CREATE_ORDER_SUCCESS:
+            return {...state,
+                loading:false,
+                success:true,
+                order:action.payload,
+                error:null
+            }
+        case CONFIRM_ORDER_SUCCESS:
+        case GET_ORDER_HISTORY_SUCCESS:
             return {...state,
                 loading:false,
                 success:true,
@@ -29,6 +38,8 @@ export const orderReducer=(state=iniState,action)=>{
                 error:null
             }
         case GET_ORDER_BY_ID_FAILURE:
+        case CONFIRM_ORDER_FAILURE:
+        case GET_ORDER_HISTORY_FAILURE:
             return {...state,loading:false,error:action.payload}
         default: return state
     }
